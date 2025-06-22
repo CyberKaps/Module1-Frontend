@@ -12,7 +12,7 @@ export default function App() {
   const handleAnalyze = async () => {
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:4000/api/code/analyze', {
+      const res = await axios.post('https://module1-zypx.onrender.com/api/code/analyze', {
         code,
         language
       });
